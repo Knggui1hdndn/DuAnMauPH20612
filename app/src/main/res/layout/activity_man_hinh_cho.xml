@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManHinhCho">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/cho"
+        app:lottie_loop="false"
+        android:layout_margin="50dp"
+        android:id="@+id/a"/>
+    <TextView
+android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#F1D365"
+        android:padding="5dp"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+
+        android:id="@+id/t"
+        android:text="Nhà Sách Phương Nam"
+        android:textColor="#F63B00"
+        android:textSize="27sp" />
+</FrameLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#F1D365"
+        android:padding="5dp"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+
+        android:id="@+id/t1"
+        android:text="Xin vui lòng ấn vào logo để tiếp tục"
+        android:textColor="#F63B00"
+        android:textSize="25sp" />
+</LinearLayout>

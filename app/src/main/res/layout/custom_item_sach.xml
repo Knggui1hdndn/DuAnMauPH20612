@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mRelativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <FrameLayout
+            android:id="@+id/ìmg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/ìmg"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cateicon" />
+
+            <TextView
+                android:id="@+id/txtMaSach"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="left"
+                android:text="#PH20612"
+                android:textColor="#FF5722"
+                android:textSize="12.2sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="23dp"
+                android:layout_height="23sp"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_close"
+                android:text="" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ìmg1"
+            android:layout_marginTop="0dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTieuDe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Lịch sử lớp 12"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ìmg1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Giá"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/soLuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ìmg1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Số lượng sách"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+

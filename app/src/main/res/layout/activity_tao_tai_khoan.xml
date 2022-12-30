@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pnlib.dnmu.taiKhoan.taoTaiKhoan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mau1"
+        app:title="Tạo tài khoản" />
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_margin="20sp"
+                  app:cardCornerRadius="60dp">
+
+                  <ImageView
+                      android:layout_width="120dp"
+                      android:layout_height="120dp"
+                      android:scaleType="centerCrop"
+                      android:src="@drawable/img_12" />
+
+              </androidx.cardview.widget.CardView>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:text="Create Account"
+                  android:textColor="#FF5722"
+                  android:textSize="35dp"
+                  android:textStyle="bold" />
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/edtMaThuThu"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:hint="Mã thủ thư"
+                  app:endIconMode="clear_text">
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black" />
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/edtTenThuThu"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:hint="Tên thủ thư"
+
+                  app:endIconMode="clear_text">
+
+                  <EditText
+                      android:layout_width="match_parent"
+
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black" />
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/edtMatKhau"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+
+                  android:hint="Mật khẩu"
+
+                  app:endIconMode="clear_text">
+
+                  <EditText
+                      android:layout_width="match_parent"
+
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black" />
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/edtNlMatKhau"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+
+                  android:hint="Nhập lại mật khẩu"
+
+                  app:endIconMode="clear_text">
+
+                  <EditText
+                      android:layout_width="match_parent"
+
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black" />
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                  android:id="@+id/edtSDT"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:hint="Số điện thoại"
+
+                  app:endIconMode="clear_text">
+
+                  <EditText
+                      android:layout_width="match_parent"
+
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black" />
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="5dp"
+                      android:drawablePadding="5dp"
+                      android:text="Chọn ảnh"
+                      android:textColor="@color/black"
+                      android:textSize="16dp" />
+
+                  <ImageView
+                      android:layout_width="100dp"
+                      android:layout_height="100dp"
+                      android:layout_marginStart="10dp"
+                      android:scaleType="centerCrop"
+                      android:id="@+id/imgAvatar"
+                      android:visibility="gone"
+                      />
+
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginStart="10dp"
+                      android:scaleType="centerCrop"
+                      android:id="@+id/imgSelected"
+                      android:src="@drawable/ic_baseline_image_search_24" />
+
+                  <ImageView
+                      android:id="@+id/imgCam"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginStart="10dp"
+                      android:scaleType="centerCrop"
+                      android:src="@drawable/ic_baseline_camera_alt_24"
+                      />
+
+              </LinearLayout>
+
+
+
+              <Button
+                  android:id="@+id/btnCreate"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="25dp"
+                  android:background="@drawable/mau"
+                  android:padding="8dp"
+                  android:text="Create Account"
+                  android:textAllCaps="false"
+                  android:textSize="18dp" />
+              <com.airbnb.lottie.LottieAnimationView
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+                  android:scaleType="centerCrop"
+
+                  android:layout_gravity="center_horizontal"
+                  app:lottie_autoPlay="false"
+                  app:lottie_loop="false"
+                  android:id="@+id/lottie"
+                  app:lottie_rawRes="@raw/successful1" />
+          </LinearLayout>
+      </androidx.core.widget.NestedScrollView>
+  </FrameLayout>
+</LinearLayout>

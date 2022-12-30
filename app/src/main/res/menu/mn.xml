@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Cá nhân">
+        <menu>
+            <item android:title="Chỉnh sửa tên" android:icon="@drawable/ic_baseline_edit_24"
+                android:id="@+id/editName"/>
+            <item
+                android:id="@+id/editAvatar"
+                android:title="Chỉnh sửa Avatar"
+                android:icon="@drawable/ic_baseline_person_24"  />
+            <item android:title="Đổi mật khẩu"
+                android:id="@+id/editPass"
+                android:icon="@drawable/ic_baseline_key_24"  />
+        </menu>
+    </item>
+    <item android:title="Tài khoản">
+
+        <menu>
+            <item
+                android:id="@+id/addTK"
+                android:title="Tạo tài khoản"
+                android:icon="@drawable/ic_baseline_person_add_alt_1_24"  />
+             <item
+                 android:id="@+id/logout"
+                 android:title="Đăng xuất"
+                 android:icon="@drawable/ic_baseline_logout_24"  />
+         </menu>
+    </item>
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Chọn ảnh từ camera"
+        android:textAllCaps="false"
+        android:gravity="left|center"
+        android:drawablePadding="10dp"
+        android:id="@+id/btnCam"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/ic_baseline_camera_alt_24"
+        />
+    <Button
+        android:paddingLeft="15dp"
+android:gravity="left|center"
+        android:id="@+id/btnGalary"
+        android:drawablePadding="10dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_baseline_image_search_24"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Chọn ảnh từ thư viện"
+        />
+
+</LinearLayout>
